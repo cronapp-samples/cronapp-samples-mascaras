@@ -1150,7 +1150,7 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "CNPJ",
-          "mask": "",
+          "mask": "99.999.999/9999-99;0",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
@@ -1376,13 +1376,17 @@
           "name": "user",
           "type": "User",
           "dbName": "fk_user",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
           "label": "User",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
-          "multitenantContext": "",
           "pkType": "",
+          "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
           "isInsertable": true,
@@ -1390,8 +1394,14 @@
           "isEncryption": false,
           "referencedColumnName": "",
           "isSearchable": false,
+          "sequence": "",
           "isCascade": false,
-          "isVersion": false
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -1689,8 +1699,8 @@
         "id:java.lang.String",
         "empresa:Empresa",
         "funcionario:Funcionario",
-        "data:java.lang.String",
-        "valor:java.lang.String"
+        "data:java.util.Date",
+        "valor:java.lang.Double"
       ],
       "attrs": {
         ".": {
@@ -1709,7 +1719,7 @@
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 88.828125,
-          "text": "Texto\nEmpresa\nFuncionario\nTexto\nTexto\n"
+          "text": "Texto\nEmpresa\nFuncionario\nData\nNumérico\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#fffec0",
@@ -1834,14 +1844,14 @@
         },
         {
           "name": "data",
-          "type": "java.lang.String",
+          "type": "java.util.Date",
           "dbName": "data",
           "dbLength": "",
           "dbPrecision": "",
           "dbScale": "",
-          "dbDefaultValue": "",
+          "dbDefaultValue": "Calendar.getInstance().getTime()",
           "label": "Data",
-          "mask": "",
+          "mask": "DD/MM/YYYY",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
@@ -1865,14 +1875,14 @@
         },
         {
           "name": "valor",
-          "type": "java.lang.String",
+          "type": "java.lang.Double",
           "dbName": "valor",
           "dbLength": "",
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Valor",
-          "mask": "",
+          "mask": "#.#00,00",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
@@ -5133,9 +5143,9 @@
       "id": "74a68a9e-feb6-4f4a-b86a-3b5c4234c928",
       "cells": [
         "08636b38-ad7e-406b-a20a-df168827c110",
+        "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "536a4c80-2588-4681-981c-7988d4eac358",
-        "04b69df9-0c2d-4371-aed1-f71f70492e36",
-        "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+        "04b69df9-0c2d-4371-aed1-f71f70492e36"
       ]
     },
     {
